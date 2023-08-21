@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nancy Yang</title>
+    <meta name='viewport' content='widdh=device-widdh, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <header>
+
+        <h1> <img src="android-chrome-192x192.png" alt="♥NY favicon"> Nancy Yang</h1>
+
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Web Development Concepts</h2>
+
+            <nav class="local">
+                <a href="#servers">Web Servers</a>
+
+                <a href="#frontend-design">Frontend Design</a>
+
+                <a href="#optimized-images">Optimized Images</a>
+
+                <a href="#favicons">Favicons</a>
+
+                <a href="#css">Cascading Stylesheets</a>
+            </nav>
+
+            <article id="servers">
+                <h3>Web Servers</h3>
+                <!-- Explain what index means as it relates to websites and servers-->
+                <p>In websites and servers, the word <strong>index</strong> is used conventionally as the default name
+                    for an HTML
+                    file.
+                    When a URL is typed in ending with "/" into a browser, and it doesn't specify which HTML document,
+                    it will
+                    automatically go to "/index.html"
+                </p>
+
+                <!--Explain can be seen in the browser's Web Dev/Inspector tools. What is different about the file's details on the web server versus the local computer?-->
+                <p>There are many differences between the file's <strong>network details</strong> on the web server
+                    versus the local
+                    computer.
+                    Things like the request URL, favicon, connection, server information, host, and cookies may be
+                    different.
+                    For example, the URL will normally start with "file://" if it comes from a local computer, and
+                    "https://" if it
+                    is from
+                    a web server.
+                </p>
+
+                <!--Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not.-->
+                <p>The favicon.ico file has a <strong>status 200</strong> number for this webpage, but the main.css and
+                    main.js
+                    files do not. The
+                    favicon.ico file is a successful request. The main.css and main.js files return the <strong>404
+                        status
+                        code</strong>, which means
+                    the files
+                    are not found. There were no main.css and main.js files in the file folder, so the 404 status code
+                    is
+                    a proper
+                    response. </p>
+
+                <!--Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and resources?-->
+                <p>The <strong>scheme</strong> is "HTTPS". The <strong>host</strong> is "web.engr.oregonstate.edu". The
+                    <strong>subdomain</strong> is "web.engr". The
+                    <strong>host domain</strong> is "oregonstate.edu".
+                    The <strong>resources</strong> are "/~yangnan/a1-yangnan/". In other words, this URL is accessing
+                    the oregonstate.edu
+                    server in the yangnan folder, and is currently on the a1-yangnan page.
+                </p>
+            </article>
+
+            <article id="frontend-design">
+                <h3>Frontend Design</h3>
+                <p><strong>Frontend design</strong> refers to the design of an app or website that the target users will
+                    be interacting with. Frontend design is essential to the user's impression of a product. A uniformed
+                    frontend
+                    design will use colors in the same family and the same fonts/icons throughout the different pages.
+                    It should also be easy to
+                    navigate or interact with different parts of the system.
+                </p>
+                <p>There are <strong>five E's of usability</strong> that are crucial to good frontend design:</p>
+                <dl>
+                    <dt><strong>Effective</strong></dt>
+                    <dd>A usable website is effective, which means that the user is able to do the
+                        things
+                        they want to do on the website.</dd>
+                    <dt><strong>Efficient</strong></dt>
+                    <dd>A usable website is efficient, which means that the user is able to reach their
+                        goal quickly without too much work.</dd>
+                    <dt><strong>Easy to Navigate</strong></dt>
+                    <dd>A usable website is easy to navigate, which means that new users can easily
+                        understand how the website works and knows where to go to reach their goal.</dd>
+                    <dt><strong>Error-Free</strong></dt>
+                    <dd>A usable website is error-free, which means that inappropriate/unexpected
+                        responses
+                        from the website does not occur. The users shouldn't get stuck in their attempt to complete a
+                        goal.
+                    </dd>
+                    <dt><strong>Enjoyable</strong></dt>
+                    <dd>A usable website is enjoyable or <strong>engaging</strong>, which means that
+                        the
+                        user is not having a bad time on the website. Conversely, an enjoyable website may positively
+                        relate
+                        to its content and leave a good impression on its users.</dd>
+                </dl>
+
+                <p>The <strong>page layout tags</strong> are essential to web design because it helps break up the
+                    content in more digestible pieces. Page layout tags allow different subject matters to be in their
+                    own sections. It also allows the users to navigate or access certain elements with ease.
+                    The <strong>header</strong> element usually holds the name of the website and does not normally
+                    change from
+                    page-to-page.
+                    There can also be a <strong>nav</strong> element that can be used to easily navigate to other pages
+                    of the website.
+                    The <strong>main</strong> element frequently holds the whole content body of the page and is
+                    separate
+                    from the header,
+                    nav, and footer elements.
+                    You can section off parts of the main element with a <strong>section</strong> element and have
+                    <strong>article</strong> elements
+                    within the section to further
+                    differentiate blocks of content. Lastly, there is a <strong>footer</strong> element that typically
+                    shows up at
+                    the
+                    bottom of the page to hold
+                    small print items like legal/contact information or links. These different page layout tags can help
+                    search engine robots locate which area of the page may consist of a certain type of content.
+                </p>
+                <p>One vital feature of web design is <strong>anchor</strong> elements. Anchor tags allow the user to
+                    jump to a different thing when the user clicks on it.
+
+                </p>
+                <ol>
+                    <li>Anchors can link the user to an <strong>external content</strong>, or other websites, by
+                        creating a hyperlink. This is frequently accomplished by using an <strong>absolute
+                            path</strong>.
+                        An absolute path contains all the
+                        parts to a complete URL to direct the user to the right resource.
+                    </li>
+                    <li>Anchors can also link the user to <strong>internal contents</strong>, or different parts within
+                        a file/page with the
+                        section's ID value.</li>
+                    <li>Anchors can also link the user from <strong>page-to-page</strong>, or to different parts within
+                        relative
+                        directories. This can be accomplished by using a <strong>relative URL</strong>. A relative URL
+                        does not contain all parts
+                        of a complete URL, but sufficient parts of the URL in relation to the current file to reach the
+                        needed
+                        file. </li>
+                </ol>
+            </article>
+
+            <article id="optimized-images">
+                <h3>Optimized Images</h3>
+                <p>
+                    There are ways to <strong>optimize images</strong> for the web. There are six major specifications
+                    of
+                    images to keep in mind when designing a website.
+                    First, it should have a <strong>descriptive file name</strong> to help increase search engine
+                    optimization (<strong>SEO</strong>). This improves search engine's
+                    ability to find an image and categorize it properly for people searching for the image. It also
+                    helps
+                    understand what the image is. Secondly, images should have
+                    a <strong>small file size</strong> to minimize loading time. The page should display high resolution
+                    images only when necessary. Ideally, the developer should use
+                    <strong>lossless compression</strong> to compress the image to a small size, since it does not
+                    decrease
+                    the visual quality of the image. Thirdly, the image should have
+                    <strong>exact dimensions</strong> that are complimentary to the screen size. If the image is too
+                    big,
+                    then it will load too slowly. Conversely, if the image is too small,
+                    it may potentially look a bit off. Fourthly, the images should be the <strong>correct file
+                        format</strong>. Each file format has its pros and cons. Generally, photos are saved as .JPG and
+                    Line-art images or animations are recommended to be saved as .GIF. Line art can be saved as 8-bit
+                    .PNG.
+                    Graphics with true transparency are best saved as at 24-bit .PNG.
+                    Also, images should have a <strong>reduced resolution</strong>. People have different monitors, and
+                    they
+                    render different amounts of pixels per inch(ppi). Therefore, providing different
+                    image sizes to match the different resolutions is favorable. Lastly, the <strong>color mode</strong>
+                    for
+                    the type of image file is also important. RGB is widely used for .JPG, .SVG, .PNG, and .WebP.
+                    GIF files are indexed colored.
+                </p>
+                <p>
+                    The most appropriate file formats for photos are .JPG and .WebP. WebP and .JPG files can be
+                    compressed
+                    to a small size while keeping
+                    a good image quality. The most appropriate file formats for line art are .GIF and .PNG.
+                </p>
+            </article>
+
+            <article id="favicons">
+                <h3>Favicons</h3>
+                <p>
+                    The little icon you see on a browser tab for a website or for an app or a company logo is a
+                    <strong>favicon</strong>, also known
+                    favorites icon, or touch icons. Favicons is a good way to identify and differentiate webpages from
+                    each other. Browsers and devices
+                    uses favicon files for bookmarks, favorites lists, app icons, and search engine results.
+                </p>
+            </article>
+
+            <article id="css">
+                <h3>Cascading Stylesheets</h3>
+                <p>
+                    <strong>Stylesheets</strong> are a powerful tool to incorporate in websites and apps. It allows the
+                    developer to
+                    harmoniously change the appearance of multiple webpages to look congruent using one stylesheet.
+                    Stylesheets can also help improve the usability and readability of the page. Developers can use
+                    stylesheets to
+                    better represent brands and its image. Stylesheets allow the developer to adjust many
+                    parts of a webpage or tags efficiently.
+                </p>
+                <p>
+                    There are 5 ways to incorporate styles.
+                </p>
+                <ol>
+                    <li>Styles can be linked to an <strong>External CSS</strong>. The .css file can be linked in the
+                        global head of
+                        the .html file.
+                        <dl>
+                            Ex. &lt;link rel="stylesheet" href="App.css" />
+                        </dl>
+                    </li>
+                    <li>
+                        Styles can be <strong>embedded</strong> within a &lt;style> tag.
+                        <dl>Ex. &lt;style> p {color: red;} &lt;/style></dl>
+                    </li>
+                    <li>
+                        Styles can be <strong>inline</strong> with in an element.
+                        <dl>Ex. &lt;p style="color:red"></dl>
+                    </li>
+                    <li>
+                        Styles can be in written in <strong>JavaScript</strong> within a function.
+                        <dl> Ex. const redParagrah = styled.p` <br> &emsp;&emsp;&emsp;color: red;
+                            <br>&emsp;&emsp;&emsp;`;
+                        </dl>
+                    </li>
+                    <li>
+                        Styles can be in <strong>regular JavaScript</strong> through Document Object Model(DOM).
+                        <dl>
+                            Ex. document.getElementsByTageName('p').style.color='red';
+                        </dl>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2023 Nancy Yang</p>
+    </footer>
+
+</body>
+
+</html>
